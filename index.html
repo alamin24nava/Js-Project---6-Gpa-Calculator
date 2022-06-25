@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="section-wrap">
+        <div class="section-inner">
+            <h2 class="pb-3">Student Result Sheet</h2>
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <p>Student Name : <span class="fw-bold" id="tab_name"></span></p>
+                <p>Student Roll : <span class="fw-bold" id="tab_roll"></span></p>
+            </div>
+            <div class="mb-3">
+                <form id="result" class="row g-3" action="www.facebook.com">
+                    <div class="col-6">
+                        <input type="text" id="s_name" class="form-control" placeholder="Student Name" value="AL AMIN">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="s_roll" class="form-control" placeholder="Student Roll" value="102030">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="bangla" class="form-control" placeholder="Bangla" value="56">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="english" class="form-control" placeholder="English" value="98">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="math" class="form-control" placeholder="Math" value="54">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="science" class="form-control" placeholder="Science" value="68">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="religion" class="form-control" placeholder="Religion" value="99">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" id="sScience" class="form-control" placeholder="Social Science" value="80">
+                    </div>
+                </form>
+            </div>
+            <button type="submit" id="btn_submit" class="btn btn-primary">Click Hare</button>
+
+            <table class="table table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>mark</th>
+                        <th>Gpa</th>
+                        <th>Cgpa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="fw-normal">Bangla</th>
+                        <td id="tab_mark"></td>
+                        <td class="tab_gpa" id="tab_gpa"></td>
+                        <td id="tab_cgpa"></td>
+                    </tr>
+                    <tr>
+                        <th class="fw-normal">English</th>
+                        <td id="tab_mark"></td>
+                        <td class="tab_gpa" id="tab_gpa"></td>
+                        <td id="tab_cgpa"></td>
+                    </tr>
+                    <tr>
+                        <th class="fw-normal">Math</th>
+                        <td id="tab_mark"></td>
+                        <td class="tab_gpa" id="tab_gpa"></td>
+                        <td id="tab_cgpa"></td>
+                    </tr>
+                    <tr>
+                        <th class="fw-normal">Science</th>
+                        <td id="tab_mark"></td>
+                        <td class="tab_gpa" id="tab_gpa"></td>
+                        <td id="tab_cgpa"></td>
+                    </tr>
+                    <tr>
+                        <th class="fw-normal">Religion</th>
+                        <td id="tab_mark"></td>
+                        <td class="tab_gpa" id="tab_gpa"></td>
+                        <td id="tab_cgpa"></td>
+                    </tr>
+                    <tr>
+                        <th class="fw-normal">S Science</th>
+                        <td id="tab_mark"></td>
+                        <td class="tab_gpa" id="tab_gpa"></td>
+                        <td id="tab_cgpa"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
