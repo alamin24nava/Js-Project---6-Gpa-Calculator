@@ -16,88 +16,88 @@
     <section class="section-wrap">
         <div class="section-inner">
             <h2 class="pb-3">Student Result Sheet</h2>
-            <div class="d-flex align-items-center justify-content-between w-100">
-                <p>Student Name : <span class="fw-bold" id="tab_name"></span></p>
-                <p>Student Roll : <span class="fw-bold" id="tab_roll"></span></p>
-            </div>
             <div class="mb-3">
                 <form id="result" class="row g-3" action="www.facebook.com">
                     <div class="col-6">
-                        <input type="text" id="s_name" class="form-control" placeholder="Student Name" value="AL AMIN">
+                        <input type="text" id="s_name" class="form-control" placeholder="Student Name" value="">
                     </div>
                     <div class="col-6">
-                        <input type="text" id="s_roll" class="form-control" placeholder="Student Roll" value="102030">
+                        <input type="text" id="s_roll" class="form-control" placeholder="Student Roll" value="">
                     </div>
                     <div class="col-6">
-                        <input type="number" id="bangla" class="form-control" placeholder="Bangla" value="56">
+                        <input type="number" id="bangla" class="form-control" placeholder="Bangla" value="">
                     </div>
                     <div class="col-6">
-                        <input type="number" id="english" class="form-control" placeholder="English" value="98">
+                        <input type="number" id="english" class="form-control" placeholder="English" value="">
                     </div>
                     <div class="col-6">
-                        <input type="number" id="math" class="form-control" placeholder="Math" value="54">
+                        <input type="number" id="math" class="form-control" placeholder="Math" value="">
                     </div>
                     <div class="col-6">
-                        <input type="number" id="science" class="form-control" placeholder="Science" value="68">
+                        <input type="number" id="science" class="form-control" placeholder="Science" value="">
                     </div>
                     <div class="col-6">
-                        <input type="number" id="religion" class="form-control" placeholder="Religion" value="99">
+                        <input type="number" id="religion" class="form-control" placeholder="Religion" value="">
                     </div>
                     <div class="col-6">
-                        <input type="number" id="sScience" class="form-control" placeholder="Social Science" value="80">
+                        <input type="number" id="sScience" class="form-control" placeholder="Social Science" value="">
                     </div>
                 </form>
             </div>
             <button type="submit" id="btn_submit" class="btn btn-primary">Click Hare</button>
-
-            <table class="table table-bordered mt-4">
+            <div class="d-flex align-items-center justify-content-between w-100 mt-5">
+                <p>Student Name : <span class="fw-bold" id="tab_name"></span></p>
+                <p>Student Roll : <span class="fw-bold" id="tab_roll"></span></p>
+            </div>
+            <table class="table table-bordered mt-1">
                 <thead>
                     <tr>
                         <th>Subject</th>
                         <th>mark</th>
                         <th>Gpa</th>
-                        <th>Cgpa</th>
+                        <th>Great</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th class="fw-normal">Bangla</th>
-                        <td id="tab_mark"></td>
-                        <td class="tab_gpa" id="tab_gpa"></td>
-                        <td id="tab_cgpa"></td>
+                        <th id="tab_sub_bangla" class="fw-normal">Bangla</th>
+                        <td id="tab_mark_bangla"></td>
+                        <td class="tab_gpa" id="tab_gpa_bangla"></td>
+                        <td id="tab_grate_bangla"></td>
                     </tr>
                     <tr>
-                        <th class="fw-normal">English</th>
-                        <td id="tab_mark"></td>
-                        <td class="tab_gpa" id="tab_gpa"></td>
-                        <td id="tab_cgpa"></td>
+                        <th id="tab_sub" class="fw-normal">English</th>
+                        <td id="tab_mark_english"></td>
+                        <td class="tab_gpa" id="tab_gpa_english"></td>
+                        <td id="tab_grate_english"></td>
                     </tr>
                     <tr>
-                        <th class="fw-normal">Math</th>
-                        <td id="tab_mark"></td>
-                        <td class="tab_gpa" id="tab_gpa"></td>
-                        <td id="tab_cgpa"></td>
+                        <th id="tab_sub" class="fw-normal">Math</th>
+                        <td id="tab_mark_math"></td>
+                        <td class="tab_gpa" id="tab_gpa_math"></td>
+                        <td id="tab_great_math"></td>
                     </tr>
                     <tr>
-                        <th class="fw-normal">Science</th>
-                        <td id="tab_mark"></td>
-                        <td class="tab_gpa" id="tab_gpa"></td>
-                        <td id="tab_cgpa"></td>
+                        <th id="tab_sub" class="fw-normal">Science</th>
+                        <td id="tab_mark_science"></td>
+                        <td class="tab_gpa" id="tab_gpa_science"></td>
+                        <td id="tab_great_science"></td>
                     </tr>
                     <tr>
-                        <th class="fw-normal">Religion</th>
-                        <td id="tab_mark"></td>
-                        <td class="tab_gpa" id="tab_gpa"></td>
-                        <td id="tab_cgpa"></td>
+                        <th id="tab_sub" class="fw-normal">Religion</th>
+                        <td id="tab_mark_religion"></td>
+                        <td class="tab_gpa" id="tab_gpa_religion"></td>
+                        <td id="tab_great_religion"></td>
                     </tr>
                     <tr>
                         <th class="fw-normal">S Science</th>
-                        <td id="tab_mark"></td>
-                        <td class="tab_gpa" id="tab_gpa"></td>
-                        <td id="tab_cgpa"></td>
+                        <td id="tab_mark_sscience"></td>
+                        <td class="tab_gpa" id="tab_gpa_sscience"></td>
+                        <td id="tab_great_sscience"></td>
                     </tr>
                 </tbody>
             </table>
+            <h3 class="text-end" id="total_cgpa"> </h3>
         </div>
     </section>
     <!-- Bootstrap JavaScript Libraries -->
